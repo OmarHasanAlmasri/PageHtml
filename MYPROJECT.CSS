@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.advantages {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.advantages h2 {
+    margin-bottom: 1rem;
+}
+
+.advantages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advantages ul li {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
